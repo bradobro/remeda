@@ -18,6 +18,8 @@
   },
   "scripts": {
     "test": "jest --coverage && yarn run compile",
+    "test:types5": "tsc --noEmit --moduleResolution node --noImplicitReturns --skipLibCheck -t ES5 ./src/*.ts",
+    "test:types2017": "tsc --noEmit --moduleResolution node --noImplicitReturns --skipLibCheck -t ES2017 ./src/*.ts",
     "compile": "tsc -p ./tsconfig.json --noEmit",
     "prettier": "prettier 'src/**/*.ts' --write",
     "docs:install": "cd docs && yarn",

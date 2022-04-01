@@ -66,6 +66,9 @@ export function zipWith() {
   if (args.length === 3) {
     return _zipWith(args[0], args[1], args[2]);
   }
+
+  // TODO: decide on best return here
+  return undefined;
 }
 
 function _zipWith<F, S, R>(
